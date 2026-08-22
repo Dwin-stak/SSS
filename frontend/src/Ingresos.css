@@ -1,0 +1,16 @@
+.ingresos-section {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.ingresos-section h2 {
+  margin: 0 0 12px;
+}
+
+.ingresos-section .categorias-card {
+  border: none;
+  padding: 0;
+  margin-top: 24px;
+}

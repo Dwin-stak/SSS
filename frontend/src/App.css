@@ -1,0 +1,116 @@
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+  text-align: left;
+}
+
+.texto-libre-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.texto-libre-form input {
+  flex: 1;
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.gasto-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.gasto-form input,
+.gasto-form select {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.gasto-form input[name='descripcion'] {
+  flex: 2 1 200px;
+}
+
+.gasto-form input[name='monto'] {
+  flex: 1 1 100px;
+}
+
+.gasto-form select,
+.gasto-form input[name='fecha'] {
+  flex: 1 1 140px;
+}
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+button.secondary {
+  border-color: var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+button.danger {
+  border-color: transparent;
+  background: transparent;
+  color: var(--danger);
+  padding: 4px 8px;
+}
+
+.error {
+  color: var(--danger);
+  margin-bottom: 16px;
+}
+
+.gasto-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.gasto-table th,
+.gasto-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.gasto-table th {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.gasto-table .monto {
+  text-align: right;
+  font-family: var(--mono);
+}
+
+.gasto-table .acciones {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.gasto-table tfoot td {
+  border-bottom: none;
+  border-top: 2px solid var(--border);
+  font-weight: 600;
+  color: var(--text-h);
+}

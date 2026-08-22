@@ -1,0 +1,83 @@
+:root {
+  --text: #6b6178;
+  --text-h: #241f2e;
+  --bg: #fbf9fc;
+  --border: #e8e1f0;
+  --code-bg: #f3effa;
+  --accent: #9b87e8;
+  --accent-bg: rgba(155, 135, 232, 0.12);
+  --accent-border: rgba(155, 135, 232, 0.5);
+  --success: #2f9e8f;
+  --success-bg: rgba(47, 158, 143, 0.12);
+  --success-border: rgba(47, 158, 143, 0.5);
+  --danger: #e2685c;
+  --danger-bg: rgba(226, 104, 92, 0.12);
+  --danger-border: rgba(226, 104, 92, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --chart-series-1: #6f94dc;
+  --chart-grid: #ece7f2;
+  --chart-muted: #948da3;
+  --chart-baseline: #cfc7dc;
+  --chart-tooltip-bg: #ffffff;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #b3abc4;
+    --text-h: #f5f2fa;
+    --bg: #1c1a20;
+    --border: #35303e;
+    --code-bg: #2a2731;
+    --accent: #9579d6;
+    --accent-bg: rgba(149, 121, 214, 0.18);
+    --accent-border: rgba(149, 121, 214, 0.5);
+    --success: #2f9e88;
+    --success-bg: rgba(47, 158, 136, 0.18);
+    --success-border: rgba(47, 158, 136, 0.5);
+    --danger: #d3665d;
+    --danger-bg: rgba(211, 102, 93, 0.18);
+    --danger-border: rgba(211, 102, 93, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+    --chart-series-1: #6f8fd6;
+    --chart-grid: #322d3a;
+    --chart-muted: #948da3;
+    --chart-baseline: #3f3949;
+    --chart-tooltip-bg: #242229;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+}
+
+h1 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+  font-size: 40px;
+  letter-spacing: -1.2px;
+  margin: 0 0 24px;
+}

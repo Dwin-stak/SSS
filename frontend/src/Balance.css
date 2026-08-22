@@ -1,0 +1,32 @@
+.balance-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.balance-tile.positivo {
+  background: var(--success-bg);
+  border-color: var(--success-border);
+  color: var(--success);
+}
+
+.balance-tile.negativo {
+  background: var(--danger-bg);
+  border-color: var(--danger-border);
+  color: var(--danger);
+}
+
+.balance-label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.balance-valor {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 600;
+}
